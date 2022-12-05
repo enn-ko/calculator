@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=PhpStorm
+Icon=/home/ennko/Documents/PhpStorm-2021.2.2/Php/bin/phpstorm.svg
+Exec="/home/ennko/Documents/PhpStorm-2021.2.2/Php/bin/phpstorm.sh" %f
+Comment=Lightning-smart PHP IDE
+Categories=Development;IDE;
+Terminal=false
+StartupWMClass=jetbrains-phpstorm
+StartupNotify=true

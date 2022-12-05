@@ -1,0 +1,53 @@
+@import url();
+@import url(bootstrap.css);
+@import url(theme1.css);
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-white);
+    background: var(--main-bg);
+}
+/* //switch color  */
+.header .color
+{
+    width: 80px;
+    height: 25px;
+    background: var(--toggle-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.color span
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+.color .theme-1{
+    background: var(--key-red) !important;
+}
+.color .theme-2{
+    background: var(--key-red) !important;
+}
+.color .theme-3{
+    background: var(--key-red) !important;
+}
+
+/* //result  */
+.result
+{
+    background: var(--screen-bg);
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bolder;
+    text-align: end;
+    font-size: 32px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
