@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url(bootstrap.css);
+@import url(theme1.css);
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background: var(--main-bg);
+    font-family: 'League Spartan';
+}
+/* //header  */
+.colorChange{
+    color: var(--text-white);
+}
+
+/* //result  */
+.result
+{
+    background: var(--screen-bg);
+    /* color: var(--text-color); */
+    margin-top: 30px;
+    padding: 20px;
+    overflow: hidden;
+    font-weight: bolder;
+    text-align: end;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+/* //key  */
+.key{
+    font-size: 32px;
+}
+.key:hover{
+    background: var(--key-num-hover);
+}
+#eql:hover{
+    background: var(--key-red-hover);
+}
+.del:hover{
+    background: var(--key-del-hover) !important;
+}
+#res{
+    font-size: 24px !important;
+    padding: 0.58rem;
+}
+#del{
+    font-size: 24px !important;
+    padding: 0.65rem;
+}
+.numArray1{
+    background-color: var(--toggle-bg);
+}
+.calcArr1 div{
+    background-color: var(--key-num);
+    color: var(--text-color);
+    box-shadow: 0 0.2rem var(--key-num-shadow);
+}
+.calcArr2 div{
+    background-color: var(--key-red);
+    color: var(--text-white);
+    box-shadow: 0 0.2rem var(--key-red-shadow);
+}
+.calcArr{
+    background-color: var(--key-del) !important;
+    color: var(--text-white) !important;
+    box-shadow: 0 0.2rem var(--key-del-shadow) !important;
+}

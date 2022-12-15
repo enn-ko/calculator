@@ -1,0 +1,36 @@
+:root
+{
+    --theme-1: hsl(6, 63%, 50%);
+    --theme-2: hsl(25, 98%, 40%);
+    --theme-3: hsl(176, 100%, 44%);
+}
+
+/* //switch color  */
+.header .color
+{
+    width: 80px;
+    height: 25px;
+    background: var(--toggle-bg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.color span
+{
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 3px;
+}
+.color .theme-1{
+    background: var(--theme-1) !important;
+}
+.color .theme-2{
+    background: var(--theme-2) !important;
+}
+.color .theme-3{
+    background: var(--theme-3) !important;
+    
+}

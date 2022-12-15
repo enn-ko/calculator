@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Calculator app</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- //switch color -->
+  <link rel="stylesheet" href="./css/switch_stytle.css">
+  <link rel="stylesheet" href="css/theme1.css" class="alternate-style" title="theme-1" disabled>
+  <link rel="stylesheet" href="css/theme2.css" class="alternate-style" title="theme-2" disabled>
+  <link rel="stylesheet" href="css/theme3.css" class="alternate-style" title="theme-3" disabled>
+
+
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style> </style>
+</head>
+<body class="body colorChange">
+  <div class="container">
+    <div class="row min-vh-100 justify-content-center align-items-center" >
+      <div class="col-11 col-md-8 col-lg-6" style="padding-top: 50px; padding-bottom: 50px;">
+        <div>
+          <!-- //header  -->
+          <div class="header d-flex justify-content-between align-items-end">
+            <h3 class="mb-0">Calc</h3>
+            <div class="d-flex align-items-end">
+              <small class="me-3">THEME</small>
+               <div>
+                <div class="text-center">
+                  <span class="me-3 ms-1">1</span>
+                  <span class="me-3">2</span>
+                  <span>3</span>
+                </div>
+                <div class="color rounded-pill">
+                  <span class="color-theme theme-1" onclick="setActive('theme-1')"></span>
+                  <span class="color-theme theme-2" onclick="setActiveStyle('theme-2')"></span>
+                  <span class="color-theme theme-3" onclick="setActiveStyle('theme-3')"></span>
+                </div>
+               </div>
+            </div>
+          </div>
+          <!-- //result  -->
+          <div class="result rounded col-12" >
+            0
+          </div>
+          <!-- //Calculator body  -->
+          <div class=" row mx-0 no-gutters numArray1 py-4 px-2  rounded mt-3">
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(7)">7</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(8)">8</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(9)">9</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key del mb-3 rounded" id="del" onclick="del()">DEL</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(4)">4</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(5)">5</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(6)">6</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay('+')">+</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(1)">1</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(2)">2</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(3)">3</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay('-')">-</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="dot('.')">.</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay(0)">0</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay('/')">/</div>
+            </div>
+            <div class="calcArr1 col-3 text-center">
+              <div class="key pt-2 mb-3 rounded" onclick="showDisplay('*')">x</div>
+            </div>
+            <div class="calcArr2 col-6 text-center">
+              <div class="key del mb-3 rounded" id="res" onclick="res()">RESET</div>
+          </div>
+          <div class="calcArr2 col-6 text-center">
+            <div class="key pt-2 mb-3 rounded" id="eql" onclick="calc()">=</div>
+        </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/app.js"></script>
+  <script src="./js/switch.js"></script>
+</body>
+</html>
