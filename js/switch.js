@@ -1,6 +1,3 @@
-let body = document.querySelector(".body")
-let themeone = document.querySelector(".theme-1")
-let themeTwo = document
 
 let alternateStyle = document.querySelectorAll(".alternate-style")
 
